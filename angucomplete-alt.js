@@ -39,8 +39,8 @@
 
     // string constants
     var REQUIRED_CLASS = 'autocomplete-required';
-    var TEXT_SEARCHING = 'Searching...';
-    var TEXT_NORESULTS = 'No results found';
+    var TEXT_SEARCHING = 'Procurando...';
+    var TEXT_NORESULTS = 'Nada encontrado';
     var TEMPLATE_URL = '/angucomplete-alt/index.html';
 
     // Set the default template for this directive
@@ -199,7 +199,7 @@
           .map(function(field) {
             return extractValue(data, field);
           })
-          .join(' ');
+          .join(' - ');
       }
 
       function extractValue(obj, key) {
